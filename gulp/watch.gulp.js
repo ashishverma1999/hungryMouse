@@ -1,6 +1,5 @@
 const gulp = require("gulp");
 const { paths, baseDir, browserSync, isProd } = require("./utils.js");
-const { compilePug } = require("./pug.gulp.js");
 
 /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 |  Watcher
@@ -13,7 +12,6 @@ gulp.task("watch", () => {
     port: 3000,
     open: true, // or "local"
     notify: false,
-    middleware: compilePug,
   });
 
   const updating = (done) => {
@@ -21,7 +19,6 @@ gulp.task("watch", () => {
     done();
   };
 
-  gulp.watch(paths.pug.src.all, gulp.series(updating));
   gulp.watch(paths.style.src, gulp.series("style"));
   // gulp.watch(gulp.series("script"));
   gulp.watch(paths.script.src, gulp.series("script"));

@@ -38,4 +38,4 @@ gulp.task('w3cjs', (done) => {
     });
 });
 
-gulp.task('w3c', gulp.series('pug', 'w3cjs'));
+gulp.task('w3c', gulp.series('w3cjs'));

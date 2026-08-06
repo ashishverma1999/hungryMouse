@@ -84,6 +84,7 @@ $green: #79B93C !default;
 $teal: #53F283 !default;
 $cyan: #24FFEA !default;
 $light: #F9FAFD !default;
+$hungry-green: #0e3e26 !default;
 
 //*-----------------------------------------------
 //|   Theme Colors
@@ -108,6 +109,7 @@ $theme-colors: map-merge(
     'danger': $danger,
     'light': $light,
     'dark': $dark,
+    'hungry-green': $hungry-green,
   ),
   $theme-colors
 );
@@ -124,6 +126,7 @@ $theme-colors-soft: map-merge(
     'danger': tint-color($danger,85),
     'light': tint-color($light,85),
     'dark': tint-color($dark,85),
+    'hungry-green': tint-color($hungry-green,85),
   ),
   $theme-colors-soft
 );
