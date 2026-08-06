@@ -1,0 +1,16 @@
+extends layouts/LayoutTheme
+include mixins/home/landing/HeroHeader
+include mixins/home/landing/PopularItems
+include mixins/home/landing/FeaturedRestaurants
+include mixins/home/landing/Footer
+
+append variables
+  - var currentPage = 'index'
+
+prepend scripts
+  
+append content
+  +HeroHeader
+  +PopularItems
+  +FeaturedRestaurants
+  +Footer
