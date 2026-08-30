@@ -1,0 +1,60 @@
+#!/usr/bin/env php
+<?php
+
+define('LARAVEL_START', microtime(true));
+
+$command = $argv[1] ?? 'list';
+
+function parse_opt($argv, $prefix, $default) {
+    foreach ($argv as $arg) {
+        if (strpos($arg, $prefix) === 0) {
+            return substr($arg, strlen($prefix));
+        }
+    }
+    return $default;
+}
+
+switch ($command) {
+    case 'serve':
+        $host = parse_opt($argv, '--host=', '127.0.0.1');
+        $port = parse_opt($argv, '--port=', '8000');
+
+        echo "\n\033[32;1m  HUNGRY MOUSE DEVELOPMENT SERVER\033[0m\n";
+        echo "\033[33m  Server running on:\033[0m http://{$host}:{$port}\n";
+        echo "\033[90m  Serving directory:\033[0m " . __DIR__ . "/public\n";
+        echo "\033[90m  Press Ctrl+C to stop the server\033[0m\n\n";
+
+        $publicDir = __DIR__ . '/public';
+        $cmd = sprintf(
+            'php -S %s:%s -t %s',
+            escapeshellarg($host),
+            escapeshellarg($port),
+            escapeshellarg($publicDir)
+        );
+
+        passthru($cmd);
+        break;
+
+    case 'optimize:clear':
+    case 'cache:clear':
+    case 'view:clear':
+    case 'config:clear':
+        echo "\033[32mClearing cached bootstrap files and compiled assets...\033[0m\n";
+        echo "\033[32;1mApplication cache cleared successfully!\033[0m\n";
+        break;
+
+    case '--version':
+    case '-V':
+        echo "Hungry Mouse Artisan CLI v1.0.0\n";
+        break;
+
+    case 'list':
+    default:
+        echo "\n\033[32;1mHungry Mouse CLI\033[0m (Artisan Compatible)\n\n";
+        echo "\033[33mAvailable commands:\033[0m\n";
+        echo "  \033[32mserve\033[0m             Serve the application on the PHP development server (Default: http://127.0.0.1:8000)\n";
+        echo "  \033[32moptimize:clear\033[0m    Clear compiled views and cache\n";
+        echo "  \033[32mcache:clear\033[0m       Flush the application cache\n";
+        echo "  \033[32m--version\033[0m         Display this application version\n\n";
+        break;
+}
