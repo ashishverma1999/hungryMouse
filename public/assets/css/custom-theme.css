@@ -1103,3 +1103,119 @@ a.text-dark {
 a.text-dark:hover {
   color: #ffc233 !important;
 }
+
+/* Responsive adjustment for navbar with 6 items */
+@media (min-width: 992px) and (max-width: 1240px) {
+  .navbar-custom .nav-link {
+    padding: 0.45rem 0.65rem !important;
+    font-size: 0.88rem !important;
+  }
+}
+
+/* ==========================================================================
+   Franchise & Career Page Components (Dark Gourmet Emerald & Gold)
+   ========================================================================== */
+.career-job-card,
+.franchise-plan-card {
+  background: linear-gradient(168deg, #172a20 0%, #0e1b14 100%) !important;
+  border: 1px solid rgba(255, 179, 14, 0.18) !important;
+  border-radius: var(--hm-radius) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4) !important;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.career-job-card:hover,
+.franchise-plan-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.6), 0 0 20px rgba(255, 179, 14, 0.22) !important;
+  border-color: rgba(255, 179, 14, 0.6) !important;
+}
+
+.benefit-box {
+  background: rgba(255, 255, 255, 0.04) !important;
+  border: 1px solid rgba(255, 179, 14, 0.16) !important;
+  border-radius: 16px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.benefit-box:hover {
+  background: rgba(255, 179, 14, 0.08) !important;
+  border-color: #ffb30e !important;
+  transform: translateY(-4px);
+}
+
+.benefit-icon-wrap {
+  width: 54px;
+  height: 54px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(255, 179, 14, 0.2), rgba(241, 114, 40, 0.2));
+  border: 1px solid rgba(255, 179, 14, 0.35);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  color: #ffb30e;
+  margin-bottom: 1rem;
+}
+
+/* Accordion in Dark Gourmet Theme */
+.accordion-custom .accordion-item {
+  background-color: #12231a !important;
+  border: 1px solid rgba(255, 179, 14, 0.18) !important;
+  border-radius: 12px !important;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.accordion-custom .accordion-button {
+  background-color: #102118 !important;
+  color: #ffffff !important;
+  font-weight: 700;
+  padding: 1.1rem 1.25rem;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.accordion-custom .accordion-button:not(.collapsed) {
+  background: linear-gradient(90deg, #142e21, #1a3c2b) !important;
+  color: #ffb30e !important;
+  border-bottom: 1px solid rgba(255, 179, 14, 0.2) !important;
+}
+
+.accordion-custom .accordion-button::after {
+  filter: brightness(0) invert(1);
+}
+
+.accordion-custom .accordion-button:not(.collapsed)::after {
+  filter: sepia(100%) hue-rotate(5deg) saturate(500%);
+}
+
+.accordion-custom .accordion-body {
+  background-color: #0d1a13 !important;
+  color: #c8ded2 !important;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  padding: 1.25rem;
+}
+
+/* Step Badges */
+.step-number-badge {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ffb30e, #f17228);
+  color: #072516;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
+  box-shadow: 0 4px 14px rgba(255, 179, 14, 0.4);
+  flex-shrink: 0;
+}
