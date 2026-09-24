@@ -21,7 +21,8 @@
 </head>
 
 <body>
-  <!-- Announcement Bar -->
+  
+  <!-- Top Announcement Bar -->
   <div class="hm-top-bar text-center">
     <div class="container-fluid px-3 d-flex flex-wrap justify-content-center align-items-center gap-3">
       <div>
@@ -37,7 +38,7 @@
     </div>
   </div>
 
-  <!-- Main Navbar -->
+  <!-- Main Navbar (Menu Right-Aligned) -->
   <nav class="navbar navbar-expand-lg navbar-custom sticky-top py-2 shadow-sm">
     <div class="container-fluid px-lg-5 px-3">
       <a class="navbar-brand d-flex align-items-center" href="index.html">
@@ -48,36 +49,26 @@
         </div>
       </a>
 
-      <div class="d-flex align-items-center gap-2 order-lg-3">
-        <button class="btn btn-warning rounded-pill px-3 py-2 fw-bold text-dark d-flex align-items-center gap-2 shadow-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas" aria-controls="cartOffcanvas">
-          <i class="fas fa-shopping-bag text-dark fs-0"></i>
-          <span class="d-none d-sm-inline">Cart</span>
-          <span class="badge bg-danger text-white rounded-pill hm-cart-count">0</span>
-        </button>
+      <!-- Mobile Toggle -->
+      <button class="navbar-toggler border-0 shadow-none ms-auto me-2 d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <button class="navbar-toggler border-0 shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>
-
+      <!-- Right-Aligned Menu Navigation -->
       <div class="collapse navbar-collapse mt-3 mt-lg-0" id="navbarSupportedContent">
-        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
           <li class="nav-item"><a class="nav-link px-3 active" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link px-3" href="menu.html">Menu</a></li>
-          <li class="nav-item"><a class="nav-link px-3" href="about.html">About Us</a></li>
-          <li class="nav-item"><a class="nav-link px-3" href="about-hungry-mouse.html">Story</a></li>
-          <li class="nav-item"><a class="nav-link px-3" href="franchise.html">Franchise</a></li>
-        </ul>
+<li class="nav-item"><a class="nav-link px-3" href="menu.html">Menu</a></li>
+<li class="nav-item"><a class="nav-link px-3" href="about.html">About Us</a></li>
+<li class="nav-item"><a class="nav-link px-3" href="about-hungry-mouse.html">Story</a></li>
+<li class="nav-item"><a class="nav-link px-3" href="franchise.html">Franchise</a></li>
 
-        <div class="d-flex align-items-center gap-3 mt-3 mt-lg-0">
-          <div class="d-flex align-items-center bg-light px-3 py-1 rounded-pill">
-            <i class="fas fa-map-marker-alt text-danger me-2"></i>
-            <span class="small fw-bold text-dark">Lucknow</span>
-          </div>
-          <a href="https://wa.me/919250515549?text=Hi%20Hungry%20Mouse%2C%20I%20want%20to%20order%20food" target="_blank" class="btn btn-outline-success rounded-pill px-3 py-1 fw-bold text-nowrap">
-            <i class="fab fa-whatsapp me-1"></i> WhatsApp Order
-          </a>
-        </div>
+          <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+            <a href="https://wa.me/919250515549?text=Hi%20Hungry%20Mouse%2C%20I%20want%20to%20order" target="_blank" class="btn btn-outline-success rounded-pill px-3 py-1 fw-bold text-nowrap">
+              <i class="fab fa-whatsapp me-1"></i> WhatsApp Order
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </nav>
@@ -100,21 +91,21 @@
           <!-- Offers Highlight Badges -->
           <div class="row g-3 mb-4 justify-content-lg-start justify-content-center">
             <div class="col-auto">
-              <div class="bg-white bg-opacity-10 border border-white border-opacity-25 rounded-3 p-3 text-start">
-                <div class="fs-2 fw-bolder text-warning lh-1">10% OFF</div>
-                <small class="text-white fw-bold">Home Delivery</small>
+              <div class="hero-offer-badge text-start">
+                <div class="offer-num">10% OFF</div>
+                <div class="offer-lbl">Home Delivery</div>
               </div>
             </div>
             <div class="col-auto">
-              <div class="bg-white bg-opacity-10 border border-white border-opacity-25 rounded-3 p-3 text-start">
-                <div class="fs-2 fw-bolder text-warning lh-1">20% OFF</div>
-                <small class="text-white fw-bold">Self Pickup</small>
+              <div class="hero-offer-badge text-start">
+                <div class="offer-num">20% OFF</div>
+                <div class="offer-lbl">Self Pickup</div>
               </div>
             </div>
             <div class="col-auto">
-              <div class="bg-white bg-opacity-10 border border-white border-opacity-25 rounded-3 p-3 text-start">
-                <div class="fs-2 fw-bolder text-white lh-1">30 Min</div>
-                <small class="text-light fw-bold">Fast Service</small>
+              <div class="hero-offer-badge text-start">
+                <div class="offer-num">30 Min</div>
+                <div class="offer-lbl">Fast Service</div>
               </div>
             </div>
           </div>
@@ -192,7 +183,7 @@
           <h2 class="fw-bolder" style="color: #0e3e26; font-size: 2.2rem;">Trending Combos & Specials</h2>
           <p class="text-muted mb-0">Packed with flavour and bundled at unbeatable value!</p>
         </div>
-        <a href="menu.html" class="btn btn-outline-success rounded-pill px-4 py-2 fw-bold mt-3 mt-sm-0">
+        <a href="menu.html" class="btn btn-no-hover rounded-pill px-4 py-2 fw-bold mt-3 mt-sm-0">
           View All Items <i class="fas fa-arrow-right ms-1"></i>
         </a>
       </div>
@@ -211,8 +202,8 @@
               <h5 class="menu-card-title">Dal Makhni with Jeera Rice</h5>
               <div class="menu-card-footer mt-auto">
                 <div class="menu-price">₹149</div>
-                <button type="button" class="menu-add-btn" data-name="Dal Makhni with Jeera Rice" data-price="149" data-category="combos" data-image="assets/img/gallery/Jeera Rice and Dal Makhani.jpg">
-                  <i class="fas fa-plus"></i> Add
+                <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" data-name="Dal Makhni with Jeera Rice" data-price="149">
+                  <i class="fab fa-whatsapp me-1"></i> Order
                 </button>
               </div>
             </div>
@@ -232,8 +223,8 @@
               <h5 class="menu-card-title">Veg Hakka Noodles + Chilli Paneer</h5>
               <div class="menu-card-footer mt-auto">
                 <div class="menu-price">₹149</div>
-                <button type="button" class="menu-add-btn" data-name="Veg Hakka Noodles + Chilli Paneer" data-price="149" data-category="combos" data-image="assets/img/gallery/Noodles and Chilli Paneer Combo.jpg">
-                  <i class="fas fa-plus"></i> Add
+                <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" data-name="Veg Hakka Noodles + Chilli Paneer" data-price="149">
+                  <i class="fab fa-whatsapp me-1"></i> Order
                 </button>
               </div>
             </div>
@@ -253,8 +244,8 @@
               <h5 class="menu-card-title">Butter Chicken + 2 Butter Naan</h5>
               <div class="menu-card-footer mt-auto">
                 <div class="menu-price">₹249</div>
-                <button type="button" class="menu-add-btn" data-name="Butter Chicken + 2 Butter Naan" data-price="249" data-category="combos" data-image="assets/img/gallery/Butter Chicken.jpg">
-                  <i class="fas fa-plus"></i> Add
+                <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" data-name="Butter Chicken + 2 Butter Naan" data-price="249">
+                  <i class="fab fa-whatsapp me-1"></i> Order
                 </button>
               </div>
             </div>
@@ -274,8 +265,8 @@
               <h5 class="menu-card-title">Mutton Dum Biryani + Raita + Drink</h5>
               <div class="menu-card-footer mt-auto">
                 <div class="menu-price">₹349</div>
-                <button type="button" class="menu-add-btn" data-name="Mutton Dum Biryani + Raita + Soft Drink" data-price="349" data-category="combos" data-image="assets/img/gallery/Mutton Biryani.jpg">
-                  <i class="fas fa-plus"></i> Add
+                <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" data-name="Mutton Dum Biryani + Raita + Soft Drink" data-price="349">
+                  <i class="fab fa-whatsapp me-1"></i> Order
                 </button>
               </div>
             </div>
@@ -290,7 +281,7 @@
     <div class="container-fluid px-lg-5 px-3">
       <div class="row g-4">
         <div class="col-12 col-md-4">
-          <div class="card h-100 p-4 border-0 rounded-4 shadow-sm" style="background: #fdfaf3; border-left: 5px solid #ffb30e !important;">
+          <div class="card feature-card-glow h-100 p-4 border-0 rounded-4 shadow-sm" style="border-left: 5px solid #ffb30e !important;">
             <div class="d-flex align-items-center mb-3">
               <div class="rounded-circle p-3 bg-warning text-dark me-3"><i class="fas fa-fire fs-2"></i></div>
               <h5 class="fw-bold mb-0">Cooked 100% Fresh On Order</h5>
@@ -300,7 +291,7 @@
         </div>
 
         <div class="col-12 col-md-4">
-          <div class="card h-100 p-4 border-0 rounded-4 shadow-sm" style="background: #f4faf6; border-left: 5px solid #0e3e26 !important;">
+          <div class="card feature-card-glow h-100 p-4 border-0 rounded-4 shadow-sm" style="border-left: 5px solid #25d366 !important;">
             <div class="d-flex align-items-center mb-3">
               <div class="rounded-circle p-3 bg-success text-white me-3"><i class="fas fa-motorcycle fs-2"></i></div>
               <h5 class="fw-bold mb-0">10% OFF Delivery • 20% OFF Pickup</h5>
@@ -310,7 +301,7 @@
         </div>
 
         <div class="col-12 col-md-4">
-          <div class="card h-100 p-4 border-0 rounded-4 shadow-sm" style="background: #fff6f2; border-left: 5px solid #f17228 !important;">
+          <div class="card feature-card-glow h-100 p-4 border-0 rounded-4 shadow-sm" style="border-left: 5px solid #f17228 !important;">
             <div class="d-flex align-items-center mb-3">
               <div class="rounded-circle p-3 bg-danger text-white me-3"><i class="fas fa-shield-alt fs-2"></i></div>
               <h5 class="fw-bold mb-0">Hygienic & Travel-Ready</h5>
@@ -363,7 +354,7 @@
   <!-- CTA Banner -->
   <section class="py-5" style="background: linear-gradient(135deg, #0e3e26 0%, #165b38 60%, #ffb30e 100%); color: #fff;">
     <div class="container-fluid px-lg-5 px-3 text-center py-3">
-      <h2 class="display-5 fw-bolder text-white mb-3">Hungry? Order Direct & Save Big!</h2>
+      <h2 class="display-5 fw-bolder text-white mb-3">Hungry? Order Direct on WhatsApp!</h2>
       <p class="lead text-light mb-4" style="max-width: 650px; margin: 0 auto;">
         Enjoy 10% OFF on Home Delivery and 20% OFF on Self Pickup. WhatsApp us your order now!
       </p>
@@ -378,93 +369,7 @@
     </div>
   </section>
 
-  <!-- Offcanvas Cart Sidebar -->
-  <div class="offcanvas offcanvas-end cart-offcanvas" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartOffcanvasLabel">
-    <div class="offcanvas-header cart-offcanvas-header">
-      <h5 class="offcanvas-title fw-bold text-white d-flex align-items-center gap-2" id="cartOffcanvasLabel">
-        <i class="fas fa-shopping-bag text-warning"></i> Your Order Cart (<span class="hm-cart-count">0</span>)
-      </h5>
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-
-    <div class="offcanvas-body d-flex flex-column p-3">
-      <div class="discount-toggle-wrap">
-        <div class="d-flex align-items-center justify-content-between mb-2">
-          <span class="fw-bold text-dark fs--1"><i class="fas fa-tag text-danger me-1"></i> Select Order Mode:</span>
-        </div>
-        <div class="d-flex gap-2">
-          <button type="button" id="type-delivery-btn" class="discount-type-btn active" onclick="window.HM_APP.setOrderType('delivery')">
-            <i class="fas fa-motorcycle text-warning me-1"></i> Home Delivery
-            <div class="badge bg-success text-white mt-1">10% OFF</div>
-          </button>
-          <button type="button" id="type-pickup-btn" class="discount-type-btn" onclick="window.HM_APP.setOrderType('pickup')">
-            <i class="fas fa-store text-warning me-1"></i> Self Pickup
-            <div class="badge bg-success text-white mt-1">20% OFF</div>
-          </button>
-        </div>
-      </div>
-
-      <div id="cart-empty-msg" class="text-center py-5 text-muted">
-        <i class="fas fa-shopping-basket fa-3x text-warning mb-3"></i>
-        <h5 class="fw-bold">Your cart is empty</h5>
-        <p class="small">Add dishes from our menu to place order on WhatsApp!</p>
-        <a href="menu.html" class="btn btn-warning rounded-pill fw-bold text-dark px-3 py-2 mt-2">Open Menu</a>
-      </div>
-
-      <div id="cart-content-wrap" class="d-none d-flex flex-column flex-grow-1">
-        <div class="d-flex justify-content-between align-items-center mb-2">
-          <span class="fw-bold text-dark fs--1">Order Items</span>
-          <button type="button" class="btn btn-link text-danger p-0 fs--1 fw-bold text-decoration-none" onclick="window.HM_APP.clearCart()">
-            <i class="fas fa-trash-alt me-1"></i>Clear All
-          </button>
-        </div>
-
-        <div id="cart-items-container" class="flex-grow-1 overflow-auto pe-1" style="max-height: 250px;"></div>
-
-        <div class="cart-summary-box">
-          <div class="d-flex justify-content-between mb-1 text-muted fs--1">
-            <span>Subtotal:</span>
-            <span id="cart-subtotal" class="fw-bold text-dark">₹0</span>
-          </div>
-          <div class="d-flex justify-content-between mb-2 text-success fs--1">
-            <span id="cart-discount-label">Discount (10%):</span>
-            <span id="cart-discount" class="fw-bold">-₹0</span>
-          </div>
-          <hr class="my-2">
-          <div class="d-flex justify-content-between fw-bold fs-1" style="color: #0e3e26;">
-            <span>Total Payable:</span>
-            <span id="cart-final-total">₹0</span>
-          </div>
-        </div>
-
-        <div class="mt-3">
-          <label class="form-label fs--1 fw-bold mb-1">Your Details for Fast Order:</label>
-          <input type="text" id="customer-name" class="form-control form-control-sm mb-2" placeholder="Your Name">
-          <input type="tel" id="customer-phone" class="form-control form-control-sm mb-2" placeholder="Your Contact Phone">
-          <textarea id="customer-address" class="form-control form-control-sm mb-2" rows="2" placeholder="Delivery Address (if Home Delivery)"></textarea>
-          <input type="text" id="customer-notes" class="form-control form-control-sm mb-3" placeholder="Special Instructions / Notes">
-        </div>
-
-        <div class="d-grid gap-2 mt-auto">
-          <button type="button" class="btn btn-success py-2 fw-bold text-white shadow-sm" onclick="window.HM_APP.checkoutWhatsApp('1')">
-            <i class="fab fa-whatsapp me-2 fs-1"></i> Order via WhatsApp (9250515549)
-          </button>
-          <button type="button" class="btn btn-outline-success py-1 fw-bold fs--1" onclick="window.HM_APP.checkoutWhatsApp('2')">
-            <i class="fab fa-whatsapp me-1"></i> Secondary WhatsApp (7652033520)
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Floating Sticky Cart & WhatsApp Buttons -->
-  <a href="#" class="hm-floating-cart-btn" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas" aria-controls="cartOffcanvas">
-    <i class="fas fa-shopping-bag text-warning fs-1"></i>
-    <span>Cart</span>
-    <span class="hm-cart-count-pill hm-cart-count">0</span>
-    <span class="hm-cart-total-badge ms-1">₹0</span>
-  </a>
-
+  <!-- Floating WhatsApp Direct Chat -->
   <a href="https://wa.me/919250515549?text=Hi%20Hungry%20Mouse%2C%20I%20have%20an%20inquiry" target="_blank" class="hm-floating-wa" title="WhatsApp Chat">
     <i class="fab fa-whatsapp"></i>
   </a>
@@ -484,19 +389,31 @@
     </div>
   </div>
 
-  <!-- Toast Notification -->
-  <div class="position-fixed top-0 end-0 p-3" style="z-index: 2000;">
-    <div id="cart-toast" class="toast align-items-center text-white bg-dark border-0 rounded-3 shadow-lg" role="alert" aria-live="assertive" aria-atomic="true">
-      <div class="d-flex">
-        <div class="toast-body fw-bold d-flex align-items-center gap-2">
-          <i class="fas fa-check-circle text-success fs-1"></i>
-          <span id="cart-toast-msg">Item added to cart!</span>
-        </div>
-        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
-      </div>
-    </div>
+  
+  <!-- Mobile Bottom Navigation Bar (Visible on mobile screens) -->
+  <div class="hm-mobile-bottom-bar d-md-none">
+    <a href="index.html" class="hm-mobile-nav-item">
+      <i class="fas fa-home"></i>
+      <span>Home</span>
+    </a>
+    <a href="menu.html" class="hm-mobile-nav-item">
+      <i class="fas fa-utensils"></i>
+      <span>Menu</span>
+    </a>
+    <a href="https://wa.me/919250515549?text=Hi%20Hungry%20Mouse%2C%20I%20want%20to%20order" target="_blank" class="hm-mobile-nav-item text-success">
+      <i class="fab fa-whatsapp fs-2"></i>
+      <span>WhatsApp</span>
+    </a>
+    <a href="about.html" class="hm-mobile-nav-item">
+      <i class="fas fa-info-circle"></i>
+      <span>About</span>
+    </a>
+    <a href="tel:9250515549" class="hm-mobile-nav-item">
+      <i class="fas fa-phone-alt"></i>
+      <span>Call</span>
+    </a>
   </div>
-
+  
   <!-- Footer -->
   <footer class="py-5 text-white" style="background-color: #082617; border-top: 4px solid #ffb30e;">
     <div class="container-fluid px-lg-5 px-3">
@@ -557,7 +474,6 @@
     </div>
   </footer>
 
-  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/theme.js"></script>
   <script src="assets/js/menu-app.js"></script>

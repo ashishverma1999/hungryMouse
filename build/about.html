@@ -21,6 +21,7 @@
 </head>
 
 <body>
+  
   <!-- Top Announcement Bar -->
   <div class="hm-top-bar text-center">
     <div class="container-fluid px-3 d-flex flex-wrap justify-content-center align-items-center gap-3">
@@ -37,7 +38,7 @@
     </div>
   </div>
 
-  <!-- Navbar -->
+  <!-- Main Navbar (Menu Right-Aligned) -->
   <nav class="navbar navbar-expand-lg navbar-custom sticky-top py-2 shadow-sm">
     <div class="container-fluid px-lg-5 px-3">
       <a class="navbar-brand d-flex align-items-center" href="index.html">
@@ -48,24 +49,26 @@
         </div>
       </a>
 
-      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+      <!-- Mobile Toggle -->
+      <button class="navbar-toggler border-0 shadow-none ms-auto me-2 d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
+      <!-- Right-Aligned Menu Navigation -->
       <div class="collapse navbar-collapse mt-3 mt-lg-0" id="navbarSupportedContent">
-        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
           <li class="nav-item"><a class="nav-link px-3" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link px-3" href="menu.html">Menu</a></li>
-          <li class="nav-item"><a class="nav-link px-3 active" href="about.html">About Us</a></li>
-          <li class="nav-item"><a class="nav-link px-3" href="about-hungry-mouse.html">Story</a></li>
-          <li class="nav-item"><a class="nav-link px-3" href="franchise.html">Franchise</a></li>
-        </ul>
+<li class="nav-item"><a class="nav-link px-3" href="menu.html">Menu</a></li>
+<li class="nav-item"><a class="nav-link px-3 active" href="about.html">About Us</a></li>
+<li class="nav-item"><a class="nav-link px-3" href="about-hungry-mouse.html">Story</a></li>
+<li class="nav-item"><a class="nav-link px-3" href="franchise.html">Franchise</a></li>
 
-        <div class="d-flex align-items-center gap-3 mt-3 mt-lg-0">
-          <a href="menu.html" class="btn btn-warning rounded-pill px-3 py-1 fw-bold text-dark">
-            <i class="fas fa-utensils me-1"></i> Order Now
-          </a>
-        </div>
+          <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+            <a href="https://wa.me/919250515549?text=Hi%20Hungry%20Mouse%2C%20I%20want%20to%20order" target="_blank" class="btn btn-outline-success rounded-pill px-3 py-1 fw-bold text-nowrap">
+              <i class="fab fa-whatsapp me-1"></i> WhatsApp Order
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </nav>
@@ -132,7 +135,7 @@
             <div class="display-5 fw-bolder text-warning mb-2">10% OFF</div>
             <h5 class="fw-bold text-dark">Home Delivery</h5>
             <p class="text-muted mb-3">Steaming hot delivery direct to your home or office in Lucknow.</p>
-            <a href="menu.html" class="btn btn-outline-success rounded-pill fw-bold">Order Delivery</a>
+            <a href="https://wa.me/919250515549?text=Hi%20Hungry%20Mouse%2C%20I%20want%20to%20order%20for%20Home%20Delivery" target="_blank" class="btn btn-outline-success rounded-pill fw-bold">Order via WhatsApp</a>
           </div>
         </div>
         <div class="col-12 col-md-5">
@@ -140,13 +143,38 @@
             <div class="display-5 fw-bolder text-success mb-2">20% OFF</div>
             <h5 class="fw-bold text-dark">Self Pickup</h5>
             <p class="text-muted mb-3">Pick up directly from our mobile kitchen counter & save even more!</p>
-            <a href="menu.html" class="btn btn-success rounded-pill fw-bold text-white">Order for Pickup</a>
+            <a href="https://wa.me/919250515549?text=Hi%20Hungry%20Mouse%2C%20I%20want%20to%20order%20for%20Self%20Pickup" target="_blank" class="btn btn-success rounded-pill fw-bold text-white">Order for Pickup</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
+  
+  <!-- Mobile Bottom Navigation Bar (Visible on mobile screens) -->
+  <div class="hm-mobile-bottom-bar d-md-none">
+    <a href="index.html" class="hm-mobile-nav-item">
+      <i class="fas fa-home"></i>
+      <span>Home</span>
+    </a>
+    <a href="menu.html" class="hm-mobile-nav-item">
+      <i class="fas fa-utensils"></i>
+      <span>Menu</span>
+    </a>
+    <a href="https://wa.me/919250515549?text=Hi%20Hungry%20Mouse%2C%20I%20want%20to%20order" target="_blank" class="hm-mobile-nav-item text-success">
+      <i class="fab fa-whatsapp fs-2"></i>
+      <span>WhatsApp</span>
+    </a>
+    <a href="about.html" class="hm-mobile-nav-item">
+      <i class="fas fa-info-circle"></i>
+      <span>About</span>
+    </a>
+    <a href="tel:9250515549" class="hm-mobile-nav-item">
+      <i class="fas fa-phone-alt"></i>
+      <span>Call</span>
+    </a>
+  </div>
+  
   <!-- Footer -->
   <footer class="py-5 text-white" style="background-color: #082617; border-top: 4px solid #ffb30e;">
     <div class="container-fluid px-lg-5 px-3">
@@ -157,6 +185,10 @@
             <span class="ms-2 fw-bold text-white fs-3">Hungry Mouse</span>
           </div>
           <p class="text-muted">Hungry Mouse is Lucknow's premier cloud kitchen brand delivering steaming hot delicious food with speed, hygiene, and unbeatable value.</p>
+          <div class="d-flex gap-2 mt-3">
+            <span class="badge bg-warning text-dark fw-bold px-3 py-2 rounded-pill">10% OFF Delivery</span>
+            <span class="badge bg-success text-white fw-bold px-3 py-2 rounded-pill">20% OFF Pickup</span>
+          </div>
         </div>
 
         <div class="col-6 col-md-2">
@@ -171,11 +203,13 @@
         </div>
 
         <div class="col-6 col-md-2">
-          <h5 class="text-warning fw-bold mb-3">Discounts</h5>
+          <h5 class="text-warning fw-bold mb-3">Popular Combos</h5>
           <ul class="list-unstyled text-muted small">
-            <li class="mb-2">10% OFF Home Delivery</li>
-            <li class="mb-2">20% OFF Self Pickup</li>
-            <li class="mb-2">Party Combo Bulk Packs</li>
+            <li class="mb-2">Dal Makhni Combo</li>
+            <li class="mb-2">Hakka Noodles + Chilli Paneer</li>
+            <li class="mb-2">Butter Chicken + Naan</li>
+            <li class="mb-2">Mutton Dum Biryani</li>
+            <li class="mb-2">Tandoori Platter</li>
           </ul>
         </div>
 
@@ -183,6 +217,7 @@
           <h5 class="text-warning fw-bold mb-3">Contact & Orders</h5>
           <p class="mb-2"><i class="fas fa-map-marker-alt text-danger me-2"></i> Lucknow, Uttar Pradesh</p>
           <p class="mb-2"><i class="fas fa-phone-alt text-success me-2"></i> <a href="tel:9250515549" class="text-white text-decoration-none fw-bold">9250515549</a> / <a href="tel:7652033520" class="text-white text-decoration-none fw-bold">7652033520</a></p>
+          <p class="mb-2"><i class="fab fa-whatsapp text-success me-2"></i> Order hotline active 7 days a week</p>
           <div class="mt-3">
             <a href="https://wa.me/919250515549" target="_blank" class="btn btn-warning rounded-pill fw-bold px-4 py-2 text-dark">
               <i class="fab fa-whatsapp me-2"></i>Chat on WhatsApp

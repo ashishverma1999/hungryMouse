@@ -21,6 +21,7 @@
 </head>
 
 <body>
+  
   <!-- Top Announcement Bar -->
   <div class="hm-top-bar text-center">
     <div class="container-fluid px-3 d-flex flex-wrap justify-content-center align-items-center gap-3">
@@ -37,7 +38,7 @@
     </div>
   </div>
 
-  <!-- Main Navigation Bar -->
+  <!-- Main Navbar (Menu Right-Aligned) -->
   <nav class="navbar navbar-expand-lg navbar-custom sticky-top py-2 shadow-sm">
     <div class="container-fluid px-lg-5 px-3">
       <a class="navbar-brand d-flex align-items-center" href="index.html">
@@ -48,38 +49,26 @@
         </div>
       </a>
 
-      <!-- Right Action Mobile and Desktop -->
-      <div class="d-flex align-items-center gap-2 order-lg-3">
-        <!-- Cart Trigger Button -->
-        <button class="btn btn-warning rounded-pill px-3 py-2 fw-bold text-dark d-flex align-items-center gap-2 shadow-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas" aria-controls="cartOffcanvas">
-          <i class="fas fa-shopping-bag text-dark fs-0"></i>
-          <span class="d-none d-sm-inline">Cart</span>
-          <span class="badge bg-danger text-white rounded-pill hm-cart-count">0</span>
-        </button>
+      <!-- Mobile Toggle -->
+      <button class="navbar-toggler border-0 shadow-none ms-auto me-2 d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <button class="navbar-toggler border-0 shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>
-
+      <!-- Right-Aligned Menu Navigation -->
       <div class="collapse navbar-collapse mt-3 mt-lg-0" id="navbarSupportedContent">
-        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
           <li class="nav-item"><a class="nav-link px-3" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link px-3 active" href="menu.html">Menu</a></li>
-          <li class="nav-item"><a class="nav-link px-3" href="about.html">About Us</a></li>
-          <li class="nav-item"><a class="nav-link px-3" href="about-hungry-mouse.html">Story</a></li>
-          <li class="nav-item"><a class="nav-link px-3" href="franchise.html">Franchise</a></li>
-        </ul>
+<li class="nav-item"><a class="nav-link px-3 active" href="menu.html">Menu</a></li>
+<li class="nav-item"><a class="nav-link px-3" href="about.html">About Us</a></li>
+<li class="nav-item"><a class="nav-link px-3" href="about-hungry-mouse.html">Story</a></li>
+<li class="nav-item"><a class="nav-link px-3" href="franchise.html">Franchise</a></li>
 
-        <div class="d-flex align-items-center gap-3 mt-3 mt-lg-0">
-          <div class="d-flex align-items-center bg-light px-3 py-1 rounded-pill">
-            <i class="fas fa-map-marker-alt text-danger me-2"></i>
-            <span class="small fw-bold text-dark">Lucknow</span>
-          </div>
-          <a href="https://wa.me/919250515549?text=Hi%20Hungry%20Mouse%2C%20I%20want%20to%20place%20an%20order" target="_blank" class="btn btn-outline-success rounded-pill px-3 py-1 fw-bold text-nowrap">
-            <i class="fab fa-whatsapp me-1"></i> WhatsApp Order
-          </a>
-        </div>
+          <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+            <a href="https://wa.me/919250515549?text=Hi%20Hungry%20Mouse%2C%20I%20want%20to%20order" target="_blank" class="btn btn-outline-success rounded-pill px-3 py-1 fw-bold text-nowrap">
+              <i class="fab fa-whatsapp me-1"></i> WhatsApp Order
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </nav>
@@ -189,13 +178,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹149</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Dal Makhni with Jeera Rice" 
                     data-price="149" 
-                    data-portion="" 
-                    data-category="combos" 
-                    data-image="assets/img/gallery/Jeera Rice and Dal Makhani.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -218,13 +205,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹99</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Dal Tadka with Steam Rice" 
                     data-price="99" 
-                    data-portion="" 
-                    data-category="combos" 
-                    data-image="assets/img/gallery/Dal Tadka.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -247,13 +232,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹129</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Kadhai Paneer + Laccha Paratha 2 PC" 
                     data-price="129" 
-                    data-portion="" 
-                    data-category="combos" 
-                    data-image="assets/img/gallery/Awadhi Paneer Lababdar with Laccha Paratha.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -276,13 +259,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹149</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Paneer Butter Masala + Steam Rice" 
                     data-price="149" 
-                    data-portion="" 
-                    data-category="combos" 
-                    data-image="assets/img/gallery/Paneer Chilli Gravy.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -305,13 +286,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹149</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Mix Veg + Butter Naan" 
                     data-price="149" 
-                    data-portion="" 
-                    data-category="combos" 
-                    data-image="assets/img/gallery/Mix Veg.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -334,13 +313,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹99</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Aloo Jeera + Poori (4 PC)" 
                     data-price="99" 
-                    data-portion="" 
-                    data-category="combos" 
-                    data-image="assets/img/gallery/Aloo Jeera.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -363,13 +340,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹119</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Chole Bhature (2 PC)" 
                     data-price="119" 
-                    data-portion="" 
-                    data-category="combos" 
-                    data-image="assets/img/gallery/Chole Bhature.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -392,13 +367,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹129</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Rajma Chawal" 
                     data-price="129" 
-                    data-portion="" 
-                    data-category="combos" 
-                    data-image="assets/img/gallery/Thali.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -421,13 +394,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹159</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Paneer Tikka Masala + Jeera Rice" 
                     data-price="159" 
-                    data-portion="" 
-                    data-category="combos" 
-                    data-image="assets/img/gallery/Paneer Tikka.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -450,13 +421,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹149</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Veg Biryani + Raita" 
                     data-price="149" 
-                    data-portion="" 
-                    data-category="combos" 
-                    data-image="assets/img/gallery/Veg Biryani.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -482,13 +451,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹149</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Veg Hakka Noodles + Chilli Paneer" 
                     data-price="149" 
-                    data-portion="" 
-                    data-category="combos" 
-                    data-image="assets/img/gallery/Noodles and Chilli Paneer Combo.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -511,13 +478,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹149</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Veg Fried Rice + Manchurian" 
                     data-price="149" 
-                    data-portion="" 
-                    data-category="combos" 
-                    data-image="assets/img/gallery/Veg Fried Rice and Manchurian Combo.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -540,13 +505,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹159</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Schezwan Fried Rice + Chilli Paneer" 
                     data-price="159" 
-                    data-portion="" 
-                    data-category="combos" 
-                    data-image="assets/img/gallery/Fried Rice and Chilli Paneer Combo.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -569,13 +532,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹149</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Hakka Noodles + Manchurian" 
                     data-price="149" 
-                    data-portion="" 
-                    data-category="combos" 
-                    data-image="assets/img/gallery/Noodles and Veg Manchurian.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -598,13 +559,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹159</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Singapore Noodles + Chilli Panner" 
                     data-price="159" 
-                    data-portion="" 
-                    data-category="combos" 
-                    data-image="assets/img/gallery/Veg Singapore Noodles.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -627,13 +586,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹129</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Fried Rice + Chilli Garlic Potato" 
                     data-price="129" 
-                    data-portion="" 
-                    data-category="combos" 
-                    data-image="assets/img/gallery/Veg Chilli Garlic Fried Rice.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -659,13 +616,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹199</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Paneer Tikka (6 PC) + Mint Chutney" 
                     data-price="199" 
-                    data-portion="" 
-                    data-category="combos" 
-                    data-image="assets/img/gallery/Paneer Tikka.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -688,13 +643,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹219</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Malai Paneer Tikka (6 PC) + Mint Chutney" 
                     data-price="219" 
-                    data-portion="" 
-                    data-category="combos" 
-                    data-image="assets/img/gallery/Paneer Malai Tikka.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -717,13 +670,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹159</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Veg Seekh Kebab (2 PC) + Mint Chutney" 
                     data-price="159" 
-                    data-portion="" 
-                    data-category="combos" 
-                    data-image="assets/img/gallery/Veg Seekh Kebab.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -746,13 +697,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹129</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Tandoori Aloo (6 PC) + Mint Chutney" 
                     data-price="129" 
-                    data-portion="" 
-                    data-category="combos" 
-                    data-image="assets/img/gallery/Tandoori Stuffed Aloo.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -775,13 +724,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹249</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Tandoori Platter (Paneer Tikka 4 PC + Seekh Kebab 2 PC)" 
                     data-price="249" 
-                    data-portion="" 
-                    data-category="combos" 
-                    data-image="assets/img/gallery/Paneer Tikka.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -807,13 +754,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹149</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Paneer Tikka Pizza + Soft Drink" 
                     data-price="149" 
-                    data-portion="" 
-                    data-category="combos" 
-                    data-image="assets/img/gallery/pizza.png">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -836,13 +781,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹129</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Veggie Pizza + Soft Drink" 
                     data-price="129" 
-                    data-portion="" 
-                    data-category="combos" 
-                    data-image="assets/img/gallery/pizza.png">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -865,13 +808,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹149</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="White Sauce Pasta + Garlic Bread" 
                     data-price="149" 
-                    data-portion="" 
-                    data-category="combos" 
-                    data-image="assets/img/gallery/Garlic Naan.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -894,13 +835,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹149</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Red Sauce Pasta + Garlic Bread" 
                     data-price="149" 
-                    data-portion="" 
-                    data-category="combos" 
-                    data-image="assets/img/gallery/meals.png">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -923,13 +862,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹139</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Cheese Sandwich + French Fries + Soft Drink" 
                     data-price="139" 
-                    data-portion="" 
-                    data-category="combos" 
-                    data-image="assets/img/gallery/crispy-sandwitch.png">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -952,13 +889,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹149</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Veg Burger + Veg Fries + Soft Drink" 
                     data-price="149" 
-                    data-portion="" 
-                    data-category="combos" 
-                    data-image="assets/img/gallery/brand_burger.png">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -984,13 +919,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹179</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Chicken Curry + Jeera Rice" 
                     data-price="179" 
-                    data-portion="" 
-                    data-category="combos" 
-                    data-image="assets/img/gallery/Chicken Masala.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -1013,13 +946,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹249</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Butter Chicken + 2 Butter Naan" 
                     data-price="249" 
-                    data-portion="" 
-                    data-category="combos" 
-                    data-image="assets/img/gallery/Butter Chicken.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -1042,13 +973,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹229</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Kadhai Chicken + 2 Laccha Paratha" 
                     data-price="229" 
-                    data-portion="" 
-                    data-category="combos" 
-                    data-image="assets/img/gallery/Kadhai Chicken.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -1071,13 +1000,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹219</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Chicken Biryani + Raita + Soft Drink" 
                     data-price="219" 
-                    data-portion="" 
-                    data-category="combos" 
-                    data-image="assets/img/gallery/Chicken Biryani.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -1100,13 +1027,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹349</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Mutton Dum Biryani + Raita + Soft Drink" 
                     data-price="349" 
-                    data-portion="" 
-                    data-category="combos" 
-                    data-image="assets/img/gallery/Mutton Biryani.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -1129,13 +1054,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹229</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Chicken Fried Rice + Chilli Chicken" 
                     data-price="229" 
-                    data-portion="" 
-                    data-category="combos" 
-                    data-image="assets/img/gallery/Veg Fried Rice and Chilli Chicken Combo.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -1158,13 +1081,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹229</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Chicken Hakka Noodles + Chilli Chicken" 
                     data-price="229" 
-                    data-portion="" 
-                    data-category="combos" 
-                    data-image="assets/img/gallery/Noodles and Chilli Chicken combo.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -1187,13 +1108,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹299</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Tandoori Chicken (Half) + 2 Butter Naan + Mint Chutney" 
                     data-price="299" 
-                    data-portion="" 
-                    data-category="combos" 
-                    data-image="assets/img/gallery/Tandoori Chicken.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -1216,13 +1135,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹249</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Chicken Tikka (6 PC) + Soft Drink" 
                     data-price="249" 
-                    data-portion="" 
-                    data-category="combos" 
-                    data-image="assets/img/gallery/Chicken Tikka.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -1245,13 +1162,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹199</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Chicken Roll + French Fries + Soft Drink" 
                     data-price="199" 
-                    data-portion="" 
-                    data-category="combos" 
-                    data-image="assets/img/gallery/Chicken Spring Roll.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -1287,13 +1202,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹79</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Veg Momos (6 pcs)" 
                     data-price="79" 
-                    data-portion="" 
-                    data-category="chinese-snacks" 
-                    data-image="assets/img/gallery/Veg Momos.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -1316,13 +1229,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹149</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Veg Momos (12 pcs)" 
                     data-price="149" 
-                    data-portion="" 
-                    data-category="chinese-snacks" 
-                    data-image="assets/img/gallery/Veg Momos.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -1345,13 +1256,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹119</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Chicken Momos (6 pcs)" 
                     data-price="119" 
-                    data-portion="" 
-                    data-category="chinese-snacks" 
-                    data-image="assets/img/gallery/Chicken Momos.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -1374,13 +1283,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹219</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Chicken Momos (12 pcs)" 
                     data-price="219" 
-                    data-portion="" 
-                    data-category="chinese-snacks" 
-                    data-image="assets/img/gallery/Chicken Momos.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -1403,13 +1310,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹199</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Veg Fried Rice" 
                     data-price="199" 
-                    data-portion="" 
-                    data-category="chinese-snacks" 
-                    data-image="assets/img/gallery/Veg Fried Rice.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -1432,13 +1337,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹219</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Veg Schezwan Fried Rice" 
                     data-price="219" 
-                    data-portion="" 
-                    data-category="chinese-snacks" 
-                    data-image="assets/img/gallery/Veg Chilli Garlic Fried Rice.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -1461,13 +1364,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹199</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Veg Hakka Noodles" 
                     data-price="199" 
-                    data-portion="" 
-                    data-category="chinese-snacks" 
-                    data-image="assets/img/gallery/Veg Hakka Noodles.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -1490,13 +1391,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹219</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Veg Schezwan Noodles" 
                     data-price="219" 
-                    data-portion="" 
-                    data-category="chinese-snacks" 
-                    data-image="assets/img/gallery/Veg Chilli Garlic Noodles.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -1519,13 +1418,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹249</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Chicken Fried Rice" 
                     data-price="249" 
-                    data-portion="" 
-                    data-category="chinese-snacks" 
-                    data-image="assets/img/gallery/Chicken Fried Rice.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -1548,13 +1445,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹269</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Chicken Schezwan Fried Rice" 
                     data-price="269" 
-                    data-portion="" 
-                    data-category="chinese-snacks" 
-                    data-image="assets/img/gallery/Chicken Chilli Garlic Rice.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -1577,13 +1472,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹249</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Chicken Hakka Noodles" 
                     data-price="249" 
-                    data-portion="" 
-                    data-category="chinese-snacks" 
-                    data-image="assets/img/gallery/Chicken Hakka Noodles.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -1606,13 +1499,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹269</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Chicken Schezwan Noodles" 
                     data-price="269" 
-                    data-portion="" 
-                    data-category="chinese-snacks" 
-                    data-image="assets/img/gallery/Chicken Chilli Garlic Noodles.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -1635,13 +1526,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹249</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Chilli Paneer" 
                     data-price="249" 
-                    data-portion="" 
-                    data-category="chinese-snacks" 
-                    data-image="assets/img/gallery/Chilli Paneer Dry.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -1664,13 +1553,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹249</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Manchurian (Veg)" 
                     data-price="249" 
-                    data-portion="" 
-                    data-category="chinese-snacks" 
-                    data-image="assets/img/gallery/Veg Manchurian Dry.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -1693,13 +1580,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹299</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Manchurian (Chicken)" 
                     data-price="299" 
-                    data-portion="" 
-                    data-category="chinese-snacks" 
-                    data-image="assets/img/gallery/Chicken Manchurian.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -1722,13 +1607,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹249</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Honey Chilli Potato" 
                     data-price="249" 
-                    data-portion="" 
-                    data-category="chinese-snacks" 
-                    data-image="assets/img/gallery/Honey Chilli Potato.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -1751,13 +1634,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹249</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Chilli Garlic Potato" 
                     data-price="249" 
-                    data-portion="" 
-                    data-category="chinese-snacks" 
-                    data-image="assets/img/gallery/Chilli Potato.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -1780,13 +1661,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹149</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Spring Rolls (Veg) (6 pcs)" 
                     data-price="149" 
-                    data-portion="" 
-                    data-category="chinese-snacks" 
-                    data-image="assets/img/gallery/Veg Spring Roll.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -1809,13 +1688,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹159</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Spring Rolls (Paneer) (6 pcs)" 
                     data-price="159" 
-                    data-portion="" 
-                    data-category="chinese-snacks" 
-                    data-image="assets/img/gallery/Veg Spring Roll.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -1859,13 +1736,11 @@
         </div>
           <div class="menu-card-footer">
             <div class="menu-price">₹199</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Kadhai Paneer" 
                     data-price="199" 
-                    data-portion="Half" 
-                    data-category="main-veg" 
-                    data-image="assets/img/gallery/Kadhai Paneer.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="Half">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -1896,13 +1771,11 @@
         </div>
           <div class="menu-card-footer">
             <div class="menu-price">₹199</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Handi Paneer" 
                     data-price="199" 
-                    data-portion="Half" 
-                    data-category="main-veg" 
-                    data-image="assets/img/gallery/Handi Paneer.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="Half">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -1933,13 +1806,11 @@
         </div>
           <div class="menu-card-footer">
             <div class="menu-price">₹199</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Shahi Paneer" 
                     data-price="199" 
-                    data-portion="Half" 
-                    data-category="main-veg" 
-                    data-image="assets/img/gallery/Paneer Lababdar.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="Half">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -1970,13 +1841,11 @@
         </div>
           <div class="menu-card-footer">
             <div class="menu-price">₹199</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Paneer Butter Masala" 
                     data-price="199" 
-                    data-portion="Half" 
-                    data-category="main-veg" 
-                    data-image="assets/img/gallery/Tawa Paneer.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="Half">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -2007,13 +1876,11 @@
         </div>
           <div class="menu-card-footer">
             <div class="menu-price">₹219</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Paneer Lababdar" 
                     data-price="219" 
-                    data-portion="Half" 
-                    data-category="main-veg" 
-                    data-image="assets/img/gallery/Paneer Lababdar.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="Half">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -2044,13 +1911,11 @@
         </div>
           <div class="menu-card-footer">
             <div class="menu-price">₹149</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Dal Makhani" 
                     data-price="149" 
-                    data-portion="Half" 
-                    data-category="main-veg" 
-                    data-image="assets/img/gallery/Dal Makhani.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="Half">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -2081,13 +1946,11 @@
         </div>
           <div class="menu-card-footer">
             <div class="menu-price">₹129</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Dal Tadka" 
                     data-price="129" 
-                    data-portion="Half" 
-                    data-category="main-veg" 
-                    data-image="assets/img/gallery/Dal Tadka.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="Half">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -2118,13 +1981,11 @@
         </div>
           <div class="menu-card-footer">
             <div class="menu-price">₹179</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Mix Veg" 
                     data-price="179" 
-                    data-portion="Half" 
-                    data-category="main-veg" 
-                    data-image="assets/img/gallery/Mix Veg.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="Half">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -2155,13 +2016,11 @@
         </div>
           <div class="menu-card-footer">
             <div class="menu-price">₹199</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Malai Kofta" 
                     data-price="199" 
-                    data-portion="Half" 
-                    data-category="main-veg" 
-                    data-image="assets/img/gallery/Malai Corn Kebab.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="Half">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -2192,13 +2051,11 @@
         </div>
           <div class="menu-card-footer">
             <div class="menu-price">₹199</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Mushroom Masala" 
                     data-price="199" 
-                    data-portion="Half" 
-                    data-category="main-veg" 
-                    data-image="assets/img/gallery/Mushroom Masala.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="Half">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -2242,13 +2099,11 @@
         </div>
           <div class="menu-card-footer">
             <div class="menu-price">₹249</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Butter Chicken" 
                     data-price="249" 
-                    data-portion="Half" 
-                    data-category="main-nonveg" 
-                    data-image="assets/img/gallery/Butter Chicken.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="Half">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -2279,13 +2134,11 @@
         </div>
           <div class="menu-card-footer">
             <div class="menu-price">₹249</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Kadhai Chicken" 
                     data-price="249" 
-                    data-portion="Half" 
-                    data-category="main-nonveg" 
-                    data-image="assets/img/gallery/Kadhai Chicken.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="Half">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -2316,13 +2169,11 @@
         </div>
           <div class="menu-card-footer">
             <div class="menu-price">₹249</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Chicken Handi" 
                     data-price="249" 
-                    data-portion="Half" 
-                    data-category="main-nonveg" 
-                    data-image="assets/img/gallery/Handi Chicken.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="Half">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -2353,13 +2204,11 @@
         </div>
           <div class="menu-card-footer">
             <div class="menu-price">₹269</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Chicken Tikka Masala" 
                     data-price="269" 
-                    data-portion="Half" 
-                    data-category="main-nonveg" 
-                    data-image="assets/img/gallery/Chicken Masala.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="Half">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -2390,13 +2239,11 @@
         </div>
           <div class="menu-card-footer">
             <div class="menu-price">₹299</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Mutton Korma" 
                     data-price="299" 
-                    data-portion="Half" 
-                    data-category="main-nonveg" 
-                    data-image="assets/img/gallery/Mutton Korma.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="Half">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -2427,13 +2274,11 @@
         </div>
           <div class="menu-card-footer">
             <div class="menu-price">₹299</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Mutton Handi" 
                     data-price="299" 
-                    data-portion="Half" 
-                    data-category="main-nonveg" 
-                    data-image="assets/img/gallery/Mutton Handi.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="Half">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -2464,13 +2309,11 @@
         </div>
           <div class="menu-card-footer">
             <div class="menu-price">₹299</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Mutton Rogan Josh" 
                     data-price="299" 
-                    data-portion="Half" 
-                    data-category="main-nonveg" 
-                    data-image="assets/img/gallery/Mutton Rogan Josh.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="Half">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -2501,13 +2344,11 @@
         </div>
           <div class="menu-card-footer">
             <div class="menu-price">₹149</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Egg Curry" 
                     data-price="149" 
-                    data-portion="Half" 
-                    data-category="main-nonveg" 
-                    data-image="assets/img/gallery/Egg Curry.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="Half">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -2531,13 +2372,11 @@
             <div class="mb-2"><span class="badge bg-light text-dark border px-2 py-1 fs--1"><i class="fas fa-box-open me-1 text-warning"></i>1 KG Party Pack</span></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹1599</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Mutton Handi (1kg)" 
                     data-price="1599" 
-                    data-portion="1 KG Party Pack" 
-                    data-category="main-nonveg" 
-                    data-image="assets/img/gallery/Mutton Handi.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="1 KG Party Pack">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -2581,13 +2420,11 @@
         </div>
           <div class="menu-card-footer">
             <div class="menu-price">₹199</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Veg Biryani" 
                     data-price="199" 
-                    data-portion="Half" 
-                    data-category="rice-biryani" 
-                    data-image="assets/img/gallery/Veg Biryani.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="Half">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -2618,13 +2455,11 @@
         </div>
           <div class="menu-card-footer">
             <div class="menu-price">₹249</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Paneer Biryani" 
                     data-price="249" 
-                    data-portion="Half" 
-                    data-category="rice-biryani" 
-                    data-image="assets/img/gallery/Veg Biryani.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="Half">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -2655,13 +2490,11 @@
         </div>
           <div class="menu-card-footer">
             <div class="menu-price">₹249</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Chicken Dum Biryani" 
                     data-price="249" 
-                    data-portion="Half" 
-                    data-category="rice-biryani" 
-                    data-image="assets/img/gallery/Chicken Biryani.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="Half">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -2692,13 +2525,11 @@
         </div>
           <div class="menu-card-footer">
             <div class="menu-price">₹299</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Mutton Dum Biryani" 
                     data-price="299" 
-                    data-portion="Half" 
-                    data-category="rice-biryani" 
-                    data-image="assets/img/gallery/Mutton Biryani.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="Half">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -2722,13 +2553,11 @@
             <div class="mb-2"><span class="badge bg-light text-dark border px-2 py-1 fs--1"><i class="fas fa-box-open me-1 text-warning"></i>1 KG Family Pack</span></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹999</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Chicken Biryani (1kg)" 
                     data-price="999" 
-                    data-portion="1 KG Family Pack" 
-                    data-category="rice-biryani" 
-                    data-image="assets/img/gallery/Chicken Biryani.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="1 KG Family Pack">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -2752,13 +2581,11 @@
             <div class="mb-2"><span class="badge bg-light text-dark border px-2 py-1 fs--1"><i class="fas fa-box-open me-1 text-warning"></i>1 KG Family Pack</span></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹1499</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Mutton Biryani (1kg)" 
                     data-price="1499" 
-                    data-portion="1 KG Family Pack" 
-                    data-category="rice-biryani" 
-                    data-image="assets/img/gallery/Mutton Biryani.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="1 KG Family Pack">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -2781,13 +2608,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹179</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Fried Rice (Veg)" 
                     data-price="179" 
-                    data-portion="" 
-                    data-category="rice-biryani" 
-                    data-image="assets/img/gallery/Veg Fried Rice.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -2810,13 +2635,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹199</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Fried Rice (Egg)" 
                     data-price="199" 
-                    data-portion="" 
-                    data-category="rice-biryani" 
-                    data-image="assets/img/gallery/Egg Biryani.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -2839,13 +2662,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹129</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Jeera Rice" 
                     data-price="129" 
-                    data-portion="" 
-                    data-category="rice-biryani" 
-                    data-image="assets/img/gallery/Jeera Rice.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -2868,13 +2689,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹99</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Steam Rice" 
                     data-price="99" 
-                    data-portion="" 
-                    data-category="rice-biryani" 
-                    data-image="assets/img/gallery/Plain Rice.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -2910,13 +2729,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹249</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Margherita Pizza" 
                     data-price="249" 
-                    data-portion="" 
-                    data-category="continental" 
-                    data-image="assets/img/gallery/pizza.png">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -2939,13 +2756,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹299</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Farmhouse Pizza" 
                     data-price="299" 
-                    data-portion="" 
-                    data-category="continental" 
-                    data-image="assets/img/gallery/pizza.png">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -2968,13 +2783,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹299</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Paneer Tikka Pizza" 
                     data-price="299" 
-                    data-portion="" 
-                    data-category="continental" 
-                    data-image="assets/img/gallery/search-pizza.png">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -2997,13 +2810,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹149</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Veg Cheese Burger" 
                     data-price="149" 
-                    data-portion="" 
-                    data-category="continental" 
-                    data-image="assets/img/gallery/cheese-burger.png">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -3026,13 +2837,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹129</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Veg Sandwich" 
                     data-price="129" 
-                    data-portion="" 
-                    data-category="continental" 
-                    data-image="assets/img/gallery/crispy-sandwitch.png">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -3055,13 +2864,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹99</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="French Fries" 
                     data-price="99" 
-                    data-portion="" 
-                    data-category="continental" 
-                    data-image="assets/img/gallery/discount-item-1.png">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -3084,13 +2891,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹149</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Cheesy French Fries" 
                     data-price="149" 
-                    data-portion="" 
-                    data-category="continental" 
-                    data-image="assets/img/gallery/discount-item-1.png">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -3113,13 +2918,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹199</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Pasta (Red Sauce)" 
                     data-price="199" 
-                    data-portion="" 
-                    data-category="continental" 
-                    data-image="assets/img/gallery/meals.png">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -3142,13 +2945,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹199</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Pasta (White Sauce)" 
                     data-price="199" 
-                    data-portion="" 
-                    data-category="continental" 
-                    data-image="assets/img/gallery/meals.png">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -3184,13 +2985,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹249</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Paneer Tikka" 
                     data-price="249" 
-                    data-portion="" 
-                    data-category="tandoor" 
-                    data-image="assets/img/gallery/Paneer Tikka.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -3213,13 +3012,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹299</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Chicken Tikka" 
                     data-price="299" 
-                    data-portion="" 
-                    data-category="tandoor" 
-                    data-image="assets/img/gallery/Chicken Tikka.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -3242,13 +3039,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹329</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Malai Tikka" 
                     data-price="329" 
-                    data-portion="" 
-                    data-category="tandoor" 
-                    data-image="assets/img/gallery/Chicken Malai Tikka.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -3272,13 +3067,11 @@
             <div class="mb-2"><span class="badge bg-light text-dark border px-2 py-1 fs--1"><i class="fas fa-box-open me-1 text-warning"></i>Half (4 Pcs)</span></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹299</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Tandoori Chicken Half" 
                     data-price="299" 
-                    data-portion="Half (4 Pcs)" 
-                    data-category="tandoor" 
-                    data-image="assets/img/gallery/Tandoori Chicken.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="Half (4 Pcs)">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -3302,13 +3095,11 @@
             <div class="mb-2"><span class="badge bg-light text-dark border px-2 py-1 fs--1"><i class="fas fa-box-open me-1 text-warning"></i>Full (8 Pcs)</span></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹549</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Tandoori Chicken Full" 
                     data-price="549" 
-                    data-portion="Full (8 Pcs)" 
-                    data-category="tandoor" 
-                    data-image="assets/img/gallery/Tandoori Chicken.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="Full (8 Pcs)">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -3344,13 +3135,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹15</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Tandoori Roti" 
                     data-price="15" 
-                    data-portion="" 
-                    data-category="breads" 
-                    data-image="assets/img/gallery/Tandoori Butter Roti.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -3373,13 +3162,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹20</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Butter Roti" 
                     data-price="20" 
-                    data-portion="" 
-                    data-category="breads" 
-                    data-image="assets/img/gallery/Tandoori Butter Roti.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -3402,13 +3189,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹35</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Plain Naan" 
                     data-price="35" 
-                    data-portion="" 
-                    data-category="breads" 
-                    data-image="assets/img/gallery/Plain Naan.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -3431,13 +3216,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹45</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Butter Naan" 
                     data-price="45" 
-                    data-portion="" 
-                    data-category="breads" 
-                    data-image="assets/img/gallery/Butter Naan.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -3460,13 +3243,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹60</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Garlic Naan" 
                     data-price="60" 
-                    data-portion="" 
-                    data-category="breads" 
-                    data-image="assets/img/gallery/Garlic Naan.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -3489,13 +3270,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹40</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Missi Roti" 
                     data-price="40" 
-                    data-portion="" 
-                    data-category="breads" 
-                    data-image="assets/img/gallery/Missi Roti.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -3518,13 +3297,11 @@
           <div class="mb-2"></div>
           <div class="menu-card-footer">
             <div class="menu-price">₹50</div>
-            <button type="button" class="menu-add-btn" 
+            <button type="button" class="btn btn-success menu-order-btn rounded-pill px-3 py-1 fw-bold fs--1 text-white shadow-sm" 
                     data-name="Laccha Paratha" 
                     data-price="50" 
-                    data-portion="" 
-                    data-category="breads" 
-                    data-image="assets/img/gallery/Laccha Paratha.jpg">
-              <i class="fas fa-plus"></i> Add
+                    data-portion="">
+              <i class="fab fa-whatsapp me-1"></i> Order
             </button>
           </div>
         </div>
@@ -3613,103 +3390,12 @@
     </div>
   </section>
 
-  <!-- Offcanvas Cart Sidebar -->
-  <div class="offcanvas offcanvas-end cart-offcanvas" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartOffcanvasLabel">
-    <div class="offcanvas-header cart-offcanvas-header">
-      <h5 class="offcanvas-title fw-bold text-white d-flex align-items-center gap-2" id="cartOffcanvasLabel">
-        <i class="fas fa-shopping-bag text-warning"></i> Your Order Cart (<span class="hm-cart-count">0</span>)
-      </h5>
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-
-    <div class="offcanvas-body d-flex flex-column p-3">
-      <!-- Delivery / Pickup Discount Selector -->
-      <div class="discount-toggle-wrap">
-        <div class="d-flex align-items-center justify-content-between mb-2">
-          <span class="fw-bold text-dark fs--1"><i class="fas fa-tag text-danger me-1"></i> Select Order Mode (Offers Applied!):</span>
-        </div>
-        <div class="d-flex gap-2">
-          <button type="button" id="type-delivery-btn" class="discount-type-btn active" onclick="window.HM_APP.setOrderType('delivery')">
-            <i class="fas fa-motorcycle text-warning me-1"></i> Home Delivery
-            <div class="badge bg-success text-white mt-1">10% OFF</div>
-          </button>
-          <button type="button" id="type-pickup-btn" class="discount-type-btn" onclick="window.HM_APP.setOrderType('pickup')">
-            <i class="fas fa-store text-warning me-1"></i> Self Pickup
-            <div class="badge bg-success text-white mt-1">20% OFF</div>
-          </button>
-        </div>
-      </div>
-
-      <!-- Empty Cart State -->
-      <div id="cart-empty-msg" class="text-center py-5 text-muted">
-        <i class="fas fa-shopping-basket fa-3x text-warning mb-3"></i>
-        <h5 class="fw-bold">Your cart is empty</h5>
-        <p class="small">Add mouth-watering combos and dishes to place your order on WhatsApp!</p>
-      </div>
-
-      <!-- Cart Content Wrap -->
-      <div id="cart-content-wrap" class="d-none d-flex flex-column flex-grow-1">
-        <div class="d-flex justify-content-between align-items-center mb-2">
-          <span class="fw-bold text-dark fs--1">Order Items</span>
-          <button type="button" class="btn btn-link text-danger p-0 fs--1 fw-bold text-decoration-none" onclick="window.HM_APP.clearCart()">
-            <i class="fas fa-trash-alt me-1"></i>Clear All
-          </button>
-        </div>
-
-        <div id="cart-items-container" class="flex-grow-1 overflow-auto pe-1" style="max-height: 250px;"></div>
-
-        <!-- Summary Calculation Box -->
-        <div class="cart-summary-box">
-          <div class="d-flex justify-content-between mb-1 text-muted fs--1">
-            <span>Subtotal:</span>
-            <span id="cart-subtotal" class="fw-bold text-dark">₹0</span>
-          </div>
-          <div class="d-flex justify-content-between mb-2 text-success fs--1">
-            <span id="cart-discount-label">Discount (10%):</span>
-            <span id="cart-discount" class="fw-bold">-₹0</span>
-          </div>
-          <hr class="my-2">
-          <div class="d-flex justify-content-between fw-bold fs-1" style="color: #0e3e26;">
-            <span>Total Payable:</span>
-            <span id="cart-final-total">₹0</span>
-          </div>
-        </div>
-
-        <!-- Customer Details Inputs -->
-        <div class="mt-3">
-          <label class="form-label fs--1 fw-bold mb-1">Your Details for Fast Delivery / Pickup:</label>
-          <input type="text" id="customer-name" class="form-control form-control-sm mb-2" placeholder="Your Name">
-          <input type="tel" id="customer-phone" class="form-control form-control-sm mb-2" placeholder="Your Contact Phone">
-          <textarea id="customer-address" class="form-control form-control-sm mb-2" rows="2" placeholder="Delivery Address (if Home Delivery)"></textarea>
-          <input type="text" id="customer-notes" class="form-control form-control-sm mb-3" placeholder="Special Instructions / Spice level">
-        </div>
-
-        <!-- WhatsApp Checkout Buttons -->
-        <div class="d-grid gap-2 mt-auto">
-          <button type="button" class="btn btn-success py-2 fw-bold text-white shadow-sm" onclick="window.HM_APP.checkoutWhatsApp('1')">
-            <i class="fab fa-whatsapp me-2 fs-1"></i> Order via WhatsApp (9250515549)
-          </button>
-          <button type="button" class="btn btn-outline-success py-1 fw-bold fs--1" onclick="window.HM_APP.checkoutWhatsApp('2')">
-            <i class="fab fa-whatsapp me-1"></i> Secondary WhatsApp (7652033520)
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Floating Sticky Cart & WhatsApp Buttons -->
-  <a href="#" class="hm-floating-cart-btn" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas" aria-controls="cartOffcanvas">
-    <i class="fas fa-shopping-bag text-warning fs-1"></i>
-    <span>Cart</span>
-    <span class="hm-cart-count-pill hm-cart-count">0</span>
-    <span class="hm-cart-total-badge ms-1">₹0</span>
-  </a>
-
-  <a href="https://wa.me/919250515549?text=Hi%20Hungry%20Mouse%2C%20I%20have%20an%20inquiry" target="_blank" class="hm-floating-wa" title="WhatsApp Chat">
+  <!-- Floating WhatsApp Direct Chat -->
+  <a href="https://wa.me/919250515549?text=Hi%20Hungry%20Mouse%2C%20I%20want%20to%20order" target="_blank" class="hm-floating-wa" title="WhatsApp Chat">
     <i class="fab fa-whatsapp"></i>
   </a>
 
-  <!-- Gallery Modal Lightbox -->
+  <!-- Gallery Lightbox Modal -->
   <div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content border-0 rounded-4 overflow-hidden shadow-lg bg-dark">
@@ -3724,19 +3410,31 @@
     </div>
   </div>
 
-  <!-- Toast Notification for Add to Cart -->
-  <div class="position-fixed top-0 end-0 p-3" style="z-index: 2000;">
-    <div id="cart-toast" class="toast align-items-center text-white bg-dark border-0 rounded-3 shadow-lg" role="alert" aria-live="assertive" aria-atomic="true">
-      <div class="d-flex">
-        <div class="toast-body fw-bold d-flex align-items-center gap-2">
-          <i class="fas fa-check-circle text-success fs-1"></i>
-          <span id="cart-toast-msg">Item added to cart!</span>
-        </div>
-        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
-      </div>
-    </div>
+  
+  <!-- Mobile Bottom Navigation Bar (Visible on mobile screens) -->
+  <div class="hm-mobile-bottom-bar d-md-none">
+    <a href="index.html" class="hm-mobile-nav-item">
+      <i class="fas fa-home"></i>
+      <span>Home</span>
+    </a>
+    <a href="menu.html" class="hm-mobile-nav-item">
+      <i class="fas fa-utensils"></i>
+      <span>Menu</span>
+    </a>
+    <a href="https://wa.me/919250515549?text=Hi%20Hungry%20Mouse%2C%20I%20want%20to%20order" target="_blank" class="hm-mobile-nav-item text-success">
+      <i class="fab fa-whatsapp fs-2"></i>
+      <span>WhatsApp</span>
+    </a>
+    <a href="about.html" class="hm-mobile-nav-item">
+      <i class="fas fa-info-circle"></i>
+      <span>About</span>
+    </a>
+    <a href="tel:9250515549" class="hm-mobile-nav-item">
+      <i class="fas fa-phone-alt"></i>
+      <span>Call</span>
+    </a>
   </div>
-
+  
   <!-- Footer -->
   <footer class="py-5 text-white" style="background-color: #082617; border-top: 4px solid #ffb30e;">
     <div class="container-fluid px-lg-5 px-3">
@@ -3797,7 +3495,6 @@
     </div>
   </footer>
 
-  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/theme.js"></script>
   <script src="assets/js/menu-app.js"></script>
